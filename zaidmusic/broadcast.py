@@ -19,9 +19,9 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("`starting broadcast...`")
+        wtf = await message.reply("`waan daaray broadcast...`")
         if not message.reply_to_message:
-            await wtf.edit("please reply to a message to start broadcast!")
+            await wtf.edit("maxuma broadcast!")
             return
         lmao = message.reply_to_message.text
         async for dialog in veez.iter_dialogs():
