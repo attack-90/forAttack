@@ -10,7 +10,7 @@ async def songs(client, message):
     try:
         if len(message.command) < 2:
             await message.reply_text(
-                "❗ **song not found.**\n\n**please give a valid song name.**"
+                "❗ **.**\n\n**please give a valid song name.**"
             )
             return
         text = message.text.split(None, 1)[1]
@@ -19,4 +19,4 @@ async def songs(client, message):
             message.chat.id, results.query_id, results.results[0].id
         )
     except Exception:
-        await message.reply_text("❗ **song not found.**")
+        await message.reply_text("❗ ** wan so wayay o cad😁.**")
