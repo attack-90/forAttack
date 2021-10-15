@@ -33,10 +33,10 @@ async def stream(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="ɢʀᴏᴜᴘ",
-                        url=f"https://t.me/Zaid_Team1"),
+                        url=f"https://t.me/yaamiin"),
                     InlineKeyboardButton(
                         text="ᴄʜᴀɴɴᴇʟ",
-                        url=f"https://t.me/Zaid_Updates")
+                        url=f"https://t.me/yaamiin")
                 ]
             ]
         )
@@ -47,7 +47,7 @@ async def stream(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"❌ Videos yada ka badan 1saac ama 60{DURATION_LIMIT} minute(s) ma awoodo inan daaro!"
             )
 
         file_name = get_file_name(audio)
