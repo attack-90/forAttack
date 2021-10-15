@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
+# xuquuda lahaanshiyaha (C) 2021 By attack (@yaamiin)
 
 from __future__ import unicode_literals
 
@@ -28,7 +28,7 @@ from helpers.filters import command
 @Client.on_message(command(["song", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("🔎 finding song...")
+    m = message.reply("sug waan radinoyaaye😁...")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -41,7 +41,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("❌ **song not found.**\n\n» **please give a valid song name.**")
+        m.edit("❌ **waxas wax jiro maha yacni  wan so water😁.**\n\n» **please give a valid song name.**")
         print(str(e))
         return
     m.edit("📥 downloading...")
@@ -65,7 +65,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ error, wait for bot owner to fix")
+        m.edit("❌ error, @yaamiin u sheeg si u kaaga xaliyo")
         print(e)
 
     try:
