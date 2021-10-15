@@ -1,4 +1,4 @@
-#zaid Project 
+#attack Project 
 #Ur Motherfucker If U Kang And Don't Give Creadits 🥴
 
 from os import path
@@ -44,7 +44,7 @@ async def alive(client: Client, message: Message):
         photo=f"https://telegra.ph/file/95e785dea2717adf59de6.png",
         caption=f"""**➮𝐳 ʜɪɪ ɪ ᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
 
-➮ **Zαιԃ Sყʂƚҽɱ Wσɾƙιɳɠ Fιɳҽ**
+➮ **ATTACK Developer**
 
 ➮ **ᴢᴀɪᴅ ᴠᴇʀꜱɪᴏɴ : 5.0 Lҽƚҽʂƚ**
 
@@ -52,15 +52,15 @@ async def alive(client: Client, message: Message):
 
 ➮ **ꜱᴇʀᴠɪᴄᴇ ᴜᴘᴛɪᴍᴇ : `{uptime}`**
 
-**𝚃𝚑𝚊𝚗𝚔𝚜 𝙵𝚘𝚛 𝚄𝚜𝚒𝚗𝚐 𝚣𝚊𝚒𝚍 𝙱𝚘𝚝𝚜 ♥️**""",
+**𝚃𝚑𝚊𝚗𝚔𝚜 𝙵𝚘𝚛 𝚄𝚜𝚒𝚗𝚐 attack 𝙱𝚘𝚝𝚜 ♥️**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💫 ɢʀᴏᴜᴘ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "💫 ɢʀᴏᴜᴘ", url=f"https://t.me/Captain_help"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS"
+                        "ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/Captain_help"
                     )
                 ]
             ]
