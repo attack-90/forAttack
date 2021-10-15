@@ -25,13 +25,13 @@ async def cbstart(_, query: CallbackQuery):
                         " ꜱᴇᴛᴜᴘ⚡", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
-                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 💫", url="https://github.com/Itsunknown-12/Zaid-Vc-Player")
+                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 💫", url="https://github.com/Itsunknown-12/attack-90")
                 ],[
                     InlineKeyboardButton(
-                        "⚡ ᴏꜰꜰɪᴄɪᴀʟ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/SUPERIOR_SUPPORT"
+                        "⚡ ᴏꜰꜰɪᴄɪᴀʟ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Captain_help"
                     ),
                     InlineKeyboardButton(
-                        "ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/SUPERIOR_BOTS")
+                        "ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ ☑️", url=f"https://t.me/yaamiin")
                 ],[
                     InlineKeyboardButton(
                         " ℹ️ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"
@@ -96,7 +96,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 🎧 [ ᴢᴀɪᴅ ɢʀᴘ ᴄᴍᴅꜱ ]
 
-/play (song name) - play song from youtube
+/Daar (song name) - play song from youtube
 /ytp (song name) - play song directly from youtube 
 /stream (reply to audio) - play song using audio file
 /playlist - show the list song in queue
@@ -160,10 +160,10 @@ async def cbadmin(_, query: CallbackQuery):
         f"""<b>🏮 here is the admin commands</b>
 
 /player - show the music playing status
-/pause - pause the music streaming
-/resume - resume the music was paused
-/skip - skip to the next song
-/end - stop music streaming
+/Jooji - pause the music streaming
+/Socodsi - resume the music was paused
+/Gudbi - skip to the next song
+/Dami - stop music streaming
 /userbotjoin - invite assistant join to your group
 /auth - authorized user for using music bot
 /deauth - unauthorized for using music bot
@@ -263,12 +263,11 @@ async def cbfun(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbguide"))
 async def cbguide(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ HOW TO USE THIS BOT:
+        f"""❓Sideen u iscmaala music bot kan:
 
-1.) **first, add me to your group**.
-2.) **then promote me as admin and give all permissions except anonymous admin**.
-3.) **add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her**.
-4.) **turn on the voice chat first before start to play music**.
+1.) **Marka hore, igu dar group kada fasaxna ka qaado @yaamiin**.
+2.) **Ninkan asaga ayaa ka cawin wax waliba o u baahato @yaamiin**.
+3.) **Hadii aad iscmaasho ogolaashiyo la'aan waxad la kulmi doonto wax aan ku farxad galin**.
 
 ⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
         reply_markup=InlineKeyboardMarkup(
@@ -454,12 +453,10 @@ async def cbhelps(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhowtouse"))
 async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""❓ HOW TO USE THIS BOT:
+        f"""👿Sida loo iscmaalo music bot kan:
 
-1.) first, add me to your group.
-2.) then promote me as admin and give all permissions except anonymous admin.
-3.) add @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her.
-4.) turn on the voice chat first before start to play music.
+1.) Marka hore, fasax ka qaado @yaamiin.
+2.) Ka Dib kala hadal arimaha music kan.
 
 ⚡ __Powered by {BOT_NAME} ᴢᴀɪᴅ__""",
         reply_markup=InlineKeyboardMarkup(
