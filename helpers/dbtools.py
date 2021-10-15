@@ -29,14 +29,14 @@ async def handle_user_status(bot, cmd):
         )
 
     ban_status = await db.get_ban_status(chat_id)
-    if ban_status["is_banned"]:
+    if ban_status["waad ganaaxday"]:
         if (
-            datetime.date.today() - datetime.date.fromisoformat(ban_status["banned_on"])
-        ).days > ban_status["ban_duration"]:
+            datetime.date.today() - datetime.date.fromisoformat(ban_status["ganaaxid!"])
+        ).days > ban_status["mudada_ganaaxa"]:
             await db.remove_ban(chat_id)
         else:
             await cmd.reply_text(
-                f"sorry, you're banned, ask in @{GROUP_SUPPORT} if you think this was an mistake.",
+                f"waan ka xumahay, waad ganaaxday, ask in @{GROUP_SUPPORT} if you think this was an mistake.",
                 quote=True,
             )
             return
@@ -117,8 +117,8 @@ async def main_broadcast_handler(m, db):
         )
     else:
         await m.reply_document(
-            document="broadcast-logs.txt",
-            caption=f"✅ Broadcasting completed! \n**Completed in:** `{completed_in}`\n\n**Total users:** `{total_users}` \n**Total done:** `{done}` \n**Total success:** `{success}` \n**Total failed:** `{failed}`",
+            document="broadcast-logs.txt by attack",
+            caption=f"✅ Broadcasting completed by attack! \n**Completed in:** `{completed_in}`\n\n**Total users:** `{total_users}` \n**Total done:** `{done}` \n**Total success:** `{success}` \n**Total failed:** `{failed}`",
             quote=True,
         )
     os.remove("broadcast-logs.txt")
